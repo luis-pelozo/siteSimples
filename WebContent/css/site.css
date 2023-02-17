@@ -1,0 +1,203 @@
+@CHARSET "UTF-8";
+/* configuração do corpo da pagina*/
+body {
+	margin: 0 auto;
+	font-family: "Century Gothic", sans-serif;
+}
+/*cabeçalho*/
+header{
+	width: 100%;
+	background-color: #0062cc;
+
+
+}
+
+
+nav{
+	position: fixed;
+	top: 25px;
+}
+
+
+
+  
+
+
+/* Área geral para conteudos especificos de cada pagina*/
+section {
+	margin-top: 0;
+	clear: both;
+	min-height: 360px;
+	width: 100%;
+	
+}
+/*rodapé*/
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color:#c2d56d;
+	color: black;
+	text-align: center;
+	height: 25px;
+	align-items: center;
+}
+
+section p {
+	clear: both;
+	text-align: center;
+	margin: 10px 80px;
+	color: black;
+}
+
+
+#secao1 p{
+	font-size: large;
+	font-weight: bold;
+}
+
+/*GPT CODE*/
+.container {
+	position: relative;
+}
+  
+#botao-menu {
+	position: fixed;
+	top: 0;
+	width: 50px;
+	height: 50px;
+	position: absolute;	
+	left:0px;
+	cursor: pointer;
+}
+ 
+#menu {
+	position: absolute;
+	margin-left: 45px;
+	margin-top: 7px;
+	background-color: #b1bbd0;
+	display: none;
+} 
+  
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+  
+#menu ul li {
+	margin: 10px;
+}
+  
+#menu ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+/*FORMULÁRIO*/
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+  }
+  
+  .form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 400px;
+  }
+  
+  .form-group-row {
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .form-group-col {
+	display: flex;
+	flex-direction: column;
+	margin-right: 10px;
+	width: 50%;
+  }
+  
+  label {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+  }
+  
+  input {
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	color: #333;
+	width: 100%;
+  }
+  
+  .form-group-col:nth-child(2) input {
+	width: 100%;
+  }
+  
+  button {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #0062cc;
+  }
+  
+  .form-container {
+	margin-bottom: 50px;
+  }
+
+  
+/*BARRA DE ROLAGEM: */
+::-webkit-scrollbar {
+	display: flex;
+	width: 6px;
+}
+  
+/* espaco sem a barra */
+::-webkit-scrollbar-track {
+	background-color: #f5f5f5;
+}
+
+/*Cor da barra sem mouse*/
+::-webkit-scrollbar-thumb {
+	background-color: #ccc;
+}
+
+/*cor quando mouse ta encima*/
+::-webkit-scrollbar-thumb:hover {
+	background-color: gray;
+}
+
+
+/*botão de voltar ao topo*/
+#voltarAoTopo{
+	position: fixed;
+	right: 0;
+	bottom: 10px;
+	background-color: transparent;
+	
+}
+  
+  #voltarAoTopo img {
+	width: 160px;
+	height: 110px;	
+  }
+  
