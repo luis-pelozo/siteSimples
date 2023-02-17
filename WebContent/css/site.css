@@ -2,39 +2,79 @@
 /* configuração do corpo da pagina*/
 body {
 	margin: 0 auto;
-	font-family: "Century Gothic", sans-serif;
+	font-family: Verdana,Arial,sans-serif;
+	
 }
 /*cabeçalho*/
 header{
 	width: 100%;
-	background-color: #0062cc;
-
-
+	height: 120px;
+	background-color: white;
 }
-
-
-nav{
-	position: fixed;
-	top: 25px;
+header #logomarca{
+	width: 120px;
+	margin-left: 10px;
+	margin-top: 35px;
 }
-
-
-
-  
-
-
 /* Área geral para conteudos especificos de cada pagina*/
 section {
 	margin-top: 0;
 	clear: both;
 	min-height: 360px;
 	width: 100%;
-	
+	height: 100%;
 }
+
+#secao1 {
+	margin-top:0;
+	background-image: url("../imgs/imagem1.png");
+	background-size: cover;
+	height: 100%;
+	display: flex;
+}
+
+#imagem1 {
+	background-image: url("caminho/para/sua/imagem.jpg");
+	background-size: cover;
+  }
+  
+  #secao1 {
+	display: flex;
+	flex-direction: column;
+	
+	
+  }
+  
+  #secao1 p1 {
+	margin-bottom: 0;
+  }
+
+
+
+p1{
+	color: white;
+	text-transform: uppercase;
+	font-family:'Nissan Bold,Nissan Regular',Verdana,Arial,sans-serif;
+	font-weight: bold;
+	display: flex;
+	margin-top: 100px;
+	margin-left: 130px;
+}
+
+p2{
+	color: white;
+	text-transform: uppercase;
+    font-family: "Nissan Bold","Nissan Regular",Verdana,Arial,sans-serif;
+	font-weight:lighter;
+	margin-top: 0px;
+	margin-left: 130px;
+	font-size: 50px;
+}
+
 /*rodapé*/
 footer {
-	position: fixed;
-	bottom: 0;
+	/*position: fixed;
+	bottom: 0;*/
 	width: 100%;
 	background-color:#c2d56d;
 	color: black;
@@ -57,10 +97,9 @@ section p {
 }
 
 /*GPT CODE*/
-.container {
+/*.container {
 	position: relative;
-}
-  
+}  
 #botao-menu {
 	position: fixed;
 	top: 0;
@@ -69,31 +108,27 @@ section p {
 	position: absolute;	
 	left:0px;
 	cursor: pointer;
-}
- 
-#menu {
+} 
+/*#menu {
 	position: absolute;
 	margin-left: 45px;
 	margin-top: 7px;
 	background-color: #b1bbd0;
 	display: none;
-} 
-  
+}   
 #menu ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-}
-  
+}  
 #menu ul li {
 	margin: 10px;
-}
-  
+}  
 #menu ul li a {
 	text-decoration: none;
 	color: #333;
 }
-
+*/
 /*FORMULÁRIO*/
 
 form {
@@ -188,7 +223,7 @@ form {
 
 
 /*botão de voltar ao topo*/
-#voltarAoTopo{
+/*#voltarAoTopo{
 	position: fixed;
 	right: 0;
 	bottom: 10px;
@@ -199,5 +234,5 @@ form {
   #voltarAoTopo img {
 	width: 160px;
 	height: 110px;	
-  }
+  }*/
   
