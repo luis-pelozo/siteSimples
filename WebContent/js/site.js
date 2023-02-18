@@ -40,14 +40,9 @@ botaoMenu.addEventListener("click", function() {
   }
 });
 
-
-/*botão de voltar ao topo*/
-// seleciona o botão
-const scrollToTopBtn = document.querySelector("#voltarAoTopo");
-
-// adiciona um evento de clique ao botão
-scrollToTopBtn.addEventListener("click", () => {
-  // rola a página de volta para o topo
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+function topFunction() {
+	window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  
+  
 
