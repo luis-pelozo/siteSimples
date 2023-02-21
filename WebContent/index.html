@@ -75,47 +75,68 @@
         </div>
 
     </div>
-    <p class="tituloForm">Solicite valores</p>
+<!--***************************************-->
+    <div id="modalFormulario">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="fechar" onclick="fecharModal()">&times;</span>
+                <div class="formulario">
+                    <form >
+            
+                        <p class="tituloForm">Solicite valores</p>
+                        <div class="form-group">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="idade">Idade:</label>
+                            <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="telefone">Telefone:</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                        </div>
+                
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        </div>
+                
+                        <div class="form-group form-group-row">
+                            <div class="form-group-col">
+                                <label for="cidade">Cidade:</label>
+                                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                            </div>
+                
+                            <div class="form-group-col">
+                                <label for="estado">Estado:</label>
+                                <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
+                            </div>
+                        </div>
+                
+                        <div class="form-group">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>        
+                </div>   
+            </div>  
+        </div>
+
+
+
+    </div>
     
-    <form>
-        <div class="form-group">
-            <label for="nome">Nome completo:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
-        </div>
+    <button onclick="abrirModal()">Olá mundo</button>
+    
 
-        <div class="form-group">
-            <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
-        </div>
 
-        <div class="form-group">
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
-        </div>
 
-        <div class="form-group">
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-        </div>
-
-        <div class="form-group form-group-row">
-            <div class="form-group-col">
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
-            </div>
-
-            <div class="form-group-col">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+ <!--***************************************-->
+    
         
-    <button onclick="topFunction()">Voltar ao topo</button>
+    <button id="voltaTopo" onclick="topFunction()">Voltar ao topo</button>
 
 
     <footer>

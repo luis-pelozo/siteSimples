@@ -40,9 +40,28 @@ botaoMenu.addEventListener("click", function() {
   }
 });
 
+/*                  */
+function abrirModal() {
+	document.getElementById("modal").style.display = "block";
+}
+
+function fecharModal() {
+	document.getElementById("modal").style.display = "none";
+}
+
+// Fechar a modal se o usuário clicar fora dela
+window.onclick = function(event) {
+	if (event.target == document.getElementById("modal")) {
+		fecharModal();
+	}
+}
+
+
+
+
 function topFunction() {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-  
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
   
 
