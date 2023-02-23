@@ -1,12 +1,5 @@
 @CHARSET "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900;1,400&display=swap');
-/* * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-} */
-
-
 /* CSS Document */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, and, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
@@ -68,46 +61,50 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-
 /*cabeçalho*/
 header{
+	display: flex;
 	width: 100%;
 	height: 120px;
 	background-color: white;
+	
 }
+
+
 header #logomarca{
-	width: 120px;
-	margin-left: 10px;
+	width: 150px;
+	margin-left: 7px;
 	margin-top: 18px;
+	margin-right: 40%;
 }
-/* Área geral para conteudos especificos de cada pagina*/
 
+.btao{
+	margin-top: 16%;
+	font-size: 18px;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
 
+/*PRIMEIRA FOTO, FICAR COMO FUNDO*/
 #secao1 {
 	margin-top:0;
 	background-image: url("../imgs/imagem1.png");
 	background-size: cover;
 	height: 100%;
 	display: flex;
-	
 }
+/*Letras encima da primeira foto*/
+#secao1 {
+display: flex;
+flex-direction: column;
 
-#imagem1 {
-	background-image: url("caminho/para/sua/imagem.jpg");
-	background-size: cover;
-	margin-bottom: 0;
-	
-  }
+}
   
-  #secao1 {
-	display: flex;
-	flex-direction: column;
-	
-  }
-  
-  #secao1 p {
-	margin-bottom: 0;
-  }
 .paragrafo1{
 	color: whitesmoke;
 	font-weight: 300;
@@ -125,14 +122,7 @@ header #logomarca{
 	margin-top: 13px;
 	margin-left: 200px;
 }
-
-
-.box{
-	display: flex;
-	height: 150px;
-	
-}
-
+ /*Texto Motor*/
 .boxMotor{
 	display: flex;
 	height: 650px;
@@ -159,6 +149,13 @@ header #logomarca{
 
 }
 /*COLUNAS*/
+
+/*3 colunas*/
+.box{
+	display: flex;
+	height: 150px;
+	
+}
 #imagem{
 	flex: 1, 1, 1, 1;
 	width: 600px;
@@ -178,18 +175,6 @@ header #logomarca{
 	margin-left: 50;
 }
 /**************************************************/
-
-.formulario{
-	display: flex;
-	justify-content: center;
-	
-}
-.tituloForm{
-	font-size: 30px;
-	margin-bottom: 30px;
-	
-}
- 
 /*rodapé*/
 footer {
 	/*position: fixed;
@@ -203,9 +188,18 @@ footer {
 	align-items: center;
 }
 
-
 /*FORMULÁRIO*/
+.formulario{
+	display: flex;
+	justify-content: center;
+	
+}
 
+.tituloForm{
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+ 
 form {
 	margin-top: 20px;
 	border: 1px solid black;
@@ -217,40 +211,38 @@ form {
 	width: 500px;
 	/*margin-left: 600px;*/
 
-	
   }
   
-  .form-group {
+.form-group {
+	text-align: center;
 	display: flex;
+	
 	flex-direction: column;
 	margin-bottom: 20px;
 	width: 100%;
 	max-width: 400px;
+}
 
-  }
-  
-  .form-group-row {
+.form-group-row {
 	display: flex;
 	flex-direction: row;
+}
 
-  }
-  
-  .form-group-col {
+.form-group-col {
 	display: flex;
 	flex-direction: column;
 	margin-right: 10px;
 	width: 50%;
-  }
-  
-  label {
+}
+
+label {
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 5px;
 	color: #333;
-	
-  }
-  
-  input {
+}
+
+input {
 	font-size: 16px;
 	padding: 10px;
 	border: none;
@@ -258,36 +250,38 @@ form {
 	background-color: #f4f4f4;
 	color: #333;
 	width: 100%;
-
 	border: 1px solid black;
-  	border-radius: 10px;
-  }
-  
-  .form-group-col:nth-child(2) input {
+	border-radius: 10px;
+}
+
+.form-group-col:nth-child(2) input {
 	width: 100%;
-  }
-  
-  button {
+}
+
+ /*button {*/
+#solicitaValores, #limpa, #envia{
+	display: inline-block;
+	margin-bottom: 5px;
 	font-size: 18px;
 	font-weight: bold;
-	padding: 10px 20px;
+	padding: 10px 5px;
 	border: none;
 	border-radius: 5px;
 	background-color: #333;
 	color: #fff;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-	background-color: #0062cc;
-  }
-  
-  .form-container {
-	margin-bottom: 50px;
-  }
+	
+}
 
-  
+button:hover {
+	background-color: #0062cc;
+}
+
+.form-container {
+	margin-bottom: 50px;
+}
+
 /*BARRA DE ROLAGEM: */
 ::-webkit-scrollbar {
 	display: flex;
@@ -309,8 +303,7 @@ form {
 	background-color: gray;
 }
 
-
-
+/*Botão voltar ao topo*/
 #voltaTopo {
 	position: fixed;
 	bottom: 20px;
@@ -324,60 +317,76 @@ form {
 	cursor: pointer;
   }
   
-  button:hover {
+button:hover {
 	background-color: whitesmoke;
 	color: black;
-  }
+}
   
-
-  .abreModal{
+/*Botão formulario Modal*/
+.abreModal{
 	color: green;
-
-  }
-
-
-
-
-
-
-
-
-
-  /****************************************/
-.modalFormulario{
-	
-	display: flex;
-	
-} 
-  .modal {
+}
+/****************************************/
+.modal {
 	display: flex;
 	position: fixed;
 	z-index: 1;
-	left: 30%;
-	top: 25%;
-	width: 40%;
-	height: 60%;
+	/*left: 32%;
+	top: 25%;*/
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.8);
 
-  }
-  .modal-content {
+}
+
+.modal-content {
 	background-color: whitesmoke;
 	margin: 0 auto;
 	margin-top: 30px;
 	padding: 20px;
 	border: 1px solid ;
-	width: 80%;
-  }
-  .fechar {
+	width: 35%;
+	height:65%;
+}
+
+.fechar {
 	color: #aaaaaa;
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
-  }
-  .fechar:hover,
-  .fechar:focus {
+}
+
+.fechar:hover, .fechar:focus {
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
-  }
+}
+
+#btnModal{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+#btnModal button{
+	margin-top: 25px;
+	height: 40px;
+	color: pink
+}
+
+
+.botãoMenu {
+	display: flex;
+	justify-content: center;	
+}
+
+.mapa{
+	display: flex;
+	justify-content: center;
+}
+
+

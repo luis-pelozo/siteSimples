@@ -14,20 +14,28 @@
         crossorigin="anonymous">
     </script>
 </head>
-<body>
+<body onload="teste()">
 
     <header>
         <img id="logomarca" src="/WebContent/imgs/logo.png" alt="logo Nissan">
+        <nav class="botãoMenu">
+            <ul>
+                <button class="btao" id="btnInformacoes">Informações</button>
+                <button class="btao" id="btnMotor">Motor</button>
+                <button class="btao" id="btnSolicitaValores" onclick="abrirModal()">Solicite Valores</button>
+            </ul>
+        </nav>
+        
     </header>
    
-
+ 
     <div id="imagem1">
         <section id="secao1">
             <p class="paragrafo1">GT-R NISMO 2021</p>            
             <p class="paragrafo2">SÓ PRA BIXO DOIDO</p>
         </section>
     </div>
-    <div class="box">
+    <div class="box" id="boxe">
 
         <div id="imagem">
             <section id="secao2">
@@ -60,7 +68,7 @@
         </div>
       
     </div>
-    
+
     <div class="boxMotor">
         <div id="fotoMotor">
 
@@ -76,68 +84,60 @@
 
     </div>
 <!--***************************************-->
-    <div id="modalFormulario">
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="fechar" onclick="fecharModal()">&times;</span>
-                <div class="formulario">
-                    <form >
-            
-                        <p class="tituloForm">Solicite valores</p>
-                        <div class="form-group">
-                            <label for="nome">Nome completo:</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="idade">Idade:</label>
-                            <input type="number" id="idade" name="idade" placeholder="Digite sua idade">
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="telefone">Telefone:</label>
-                            <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
-                        </div>
-                
-                        <div class="form-group">
-                            <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                        </div>
-                
-                        <div class="form-group form-group-row">
-                            <div class="form-group-col">
-                                <label for="cidade">Cidade:</label>
-                                <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
-                            </div>
-                
-                            <div class="form-group-col">
-                                <label for="estado">Estado:</label>
-                                <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
-                            </div>
-                        </div>
-                
-                        <div class="form-group">
-                            <button type="submit">Enviar</button>
-                        </div>
-                    </form>        
-                </div>   
-            </div>  
-        </div>
-
-
-
+    <div id="btnModal">
+        <button onclick="abrirModal()" id="solicitaValores" >Solicite Valores</button>
     </div>
-    
-    <button onclick="abrirModal()">Olá mundo</button>
-    
 
-
-
- <!--***************************************-->
-    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <div class="formulario">
+                <form name="frmContato"  method="get"  onsubmit="return validaFormulario()">
+        
+                    <p class="tituloForm">Informe seus Dados</p>
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    </div>                   
+            
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+            
+                    <div class="form-group form-group-row">
+                        <div class="form-group-col">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                        </div>
+            
+                        <div class="form-group-col">
+                            <label for="estado">Estado:</label>
+                            <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
+                        </div>
+                    </div>
+            
+                    <div class="form-group">
+                        <button type="reset" id="limpa">Limpar</button>
+                        <button type="submit" id="envia" >Enviar</button>
+                    </div>
+                </form>        
+            </div>   
+        </div>  
+    </div>
+<!--***************************************-->
+<div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8759.552455068639!2d-48.86098495672933!3d-
+                 26.25867559833191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deafbe3ebf0c05%3A0x624c0303ba7bf8a7!2sSENAI%20Joinville%20Norte%20I!5e0!3m2!1spt-BR!2sbr!4v1677114842471!5m2!1spt-BR!2sbr" width="1200" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--***************************************-->
         
     <button id="voltaTopo" onclick="topFunction()">Voltar ao topo</button>
-
 
     <footer>
         <p1>Criado por Luis Fernando</p1>
