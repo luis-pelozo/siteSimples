@@ -214,9 +214,7 @@ form {
   }
   
 .form-group {
-	text-align: center;
-	display: flex;
-	
+	display: flex;	
 	flex-direction: column;
 	margin-bottom: 20px;
 	width: 100%;
@@ -375,7 +373,6 @@ button:hover {
 #btnModal button{
 	margin-top: 25px;
 	height: 40px;
-	color: pink
 }
 
 
@@ -388,5 +385,11 @@ button:hover {
 	display: flex;
 	justify-content: center;
 }
+
+/*ESCONDE A MODAL QUANDO CARREGA A*/
+.hidden {
+	display: none;
+}
+  
 
 
