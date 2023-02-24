@@ -1,16 +1,13 @@
 /*function teste(){
 	document.getElementById("modal").style.display = "none";
 }*/
-
-
-
 /* 8888888888888888888888888888888888888888888888888*/
 
 // Oculta a modal quando a página é carregada
 document.addEventListener("DOMContentLoaded", function(event) {
 	var modal = document.getElementById("modal");
 	modal.classList.add("hidden");
-  });
+});
   
 /* 8888888888888888888888888888888888888888888888888*/
 
