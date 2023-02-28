@@ -157,6 +157,8 @@ flex-direction: column;
 	
 }
 #imagem{
+	display: flex;
+	justify-content: center;
 	flex: 1, 1, 1, 1;
 	width: 600px;
 }
@@ -170,6 +172,8 @@ flex-direction: column;
 }
 
 .conteudo{
+	text-align: center;
+	
 	width: 350px;
 	margin-top: 10;
 	margin-left: 50;
@@ -234,12 +238,15 @@ form {
 }
 
 label {
+	width: 80px;
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 5px;
 	color: #333;
-}
-
+  }
+ .asteristico{
+	color: red;
+ }
 input {
 	font-size: 16px;
 	padding: 10px;
@@ -347,7 +354,7 @@ button:hover {
 	padding: 20px;
 	border: 1px solid ;
 	width: 35%;
-	height:65%;
+	height: 70%;
 }
 
 .fechar {

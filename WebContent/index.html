@@ -42,9 +42,9 @@
         <div id="imagem">
             <section id="secao2">
                 <p class="coluna">Na pista ele é foda, pronto pro racha</p>
-                <p class="conteudo">Com o  emblema NISMO é onde o filho
+                <h1 class="conteudo">Com o  emblema NISMO é onde o filho
                     chora e a mãe não vê, é só dedo no c# e gritaria, mulher gritando e rachador ficando puto
-                </p>
+                </h1>
                
             </section>
     
@@ -53,18 +53,20 @@
         <div id="imagem">
             <section id="secao3">
                 <p class="coluna">Aerodinâmica que corta como uma faca</p>
-                <P class="conteudo" > Com um aerofólio pica das galaxias feito com fibra de carbono e um design surreal
+                <h1 class="conteudo" > Com um aerofólio pica das galaxias feito com fibra de carbono e um design surreal
                     o atrito com o ar não sera um problema.
-                </P>
+                </h1>
             </section>    
         </div>
     
         <div id="imagem">
             <section id="secao4">
                 <p class="coluna">Mais bonito que sua atriz favorita</p>
-                <p class="conteudo">Com suas curvas bem desenhadas, alinhamento perfeito de portas e chassis,
+
+                <h1 class="conteudo">Com suas curvas bem desenhadas, alinhamento perfeito de portas e chassis,
                     uma frente com cara invocada, uma maquina BELÍSSIMA.
-                </p>
+                </h1>
+                
                 <!-- conteúdo da seção 3 -->
             </section>
         </div>
@@ -96,29 +98,44 @@
                 <form name="frmContato"  method="get"  onsubmit="return validaFormulario()">
         
                     <p class="tituloForm">Informe seus Dados</p>
+
                     <div class="form-group">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                       
+                        <label for="nome">  <span class="asteristico">*</span> Nome:</label>
+                       
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" >
+                        
                     </div>                   
             
                     <div class="form-group">
-                        <label for="telefone">Telefone:</label>
+                       
+                        <label for="telefone"> <span class="asteristico">*</span> Telefone:</label>
+                       
                         <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
+                        
                     </div>
             
                     <div class="form-group">
-                        <label for="email">E-mail:</label>
+                       
+                        <label for="email">  <span class="asteristico">*</span>E-mail:</label> 
+                        
                         <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                        
                     </div>
             
                     <div class="form-group form-group-row">
                         <div class="form-group-col">
-                            <label for="cidade">Cidade:</label>
+                            
+                            <label for="cidade">  <span class="asteristico">*</span> Cidade:</label>
+                            
                             <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade">
+                            
                         </div>
             
                         <div class="form-group-col">
-                            <label for="estado">Estado:</label>
+                            
+                           <label for="estado">  <span class="asteristico">*</span> Estado:</label>
+                            
                             <input type="text" id="estado" name="estado" placeholder="Digite seu estado">
                         </div>
                     </div>
