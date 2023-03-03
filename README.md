@@ -36,11 +36,8 @@ Botão LOCALIZAÇÃO rola até o fim da página, onde temos um mapa que foi impl
 <img width="700" src="https://user-images.githubusercontent.com/65668609/222841331-cebe4b27-b3ee-47c9-bd62-5e8c7e372b70.gif" />
 </div>
 
+</br>
+</br>
+</br>
 
-
-
-</br>
-</br>
-</br>
-</br>
-#### Como informado no começo deste documento, este projeto não contem nenhuma informação oficial, é apenas demonstrativo e um projeto realizado para treinar algumas habilidades com projetos da Faculdade.
+### Como informado no começo deste documento, este projeto não contem nenhuma informação oficial, é apenas demonstrativo e um projeto realizado para treinar algumas habilidades com projetos da Faculdade.
